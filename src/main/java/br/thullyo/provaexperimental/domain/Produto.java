@@ -25,4 +25,11 @@ public class Produto {
     private Double valor;
 
     private boolean disponivel;
+
+    public Produto(ProdutoDTO produtoDTO){
+        this.nome = produtoDTO.nome();
+        this.valor = produtoDTO.valor();
+        this.descricao = produtoDTO.descricao();
+        this.disponivel = produtoDTO.disponivel();
+    }
 }
